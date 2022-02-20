@@ -8,11 +8,11 @@ module.exports = {
   networks: {
     development: {
       host: "127.0.0.1",
-      port: 9545,
+      port: 7545,
       network_id: "*" // Match any network id
     },
     kovan: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
           `https://kovan.infura.io/v3/${process.env.APP_ID}`// Url to an Ethereum Node
@@ -23,7 +23,7 @@ module.exports = {
       network_id: 42
     },
     main: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
           `https://main.infura.io/v3/${process.env.APP_ID}`// Url to an Ethereum Node
@@ -34,7 +34,7 @@ module.exports = {
       network_id: 1
     },
     rinkeby: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
           `https://rinkeby.infura.io/v3/${process.env.APP_ID}`// Url to an Ethereum Node
@@ -45,7 +45,7 @@ module.exports = {
       network_id: 4
     },
     ropsten: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
           `https://ropsten.infura.io/v3/${process.env.APP_ID}`// Url to an Ethereum Node
@@ -60,7 +60,7 @@ module.exports = {
   contracts_build_directory: './artifacts/',
   compilers: {
     solc: {
-      version: ">=0.6.0 <0.8.0",
+      version: ">=0.6.0 <0.9.0",
       optimizer: {
         enabled: true,
         runs: 200

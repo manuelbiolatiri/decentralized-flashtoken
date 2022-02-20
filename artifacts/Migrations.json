@@ -52,7 +52,7 @@
   "sourceMap": "66:352:4:-:0;;;113:10;90:33;;;;;;;;;;;;;;;;;;;;66:352;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "66:352:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;313:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;127:36;;;;:::o;90:33::-;;;;;;;;;;;;:::o;313:103::-;225:5;;;;;;;;;;211:19;;:10;:19;;;196:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:9:::1;375:24;:36;;;;313:103:::0;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "/Users/emmanuelbiolatiri/Desktop/manuel/decentralized-flashtoken/contracts/Migrations.sol",
+  "sourcePath": "/Users/user/Desktop/manuel/decentralized-flashtoken/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -891,12 +891,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x3645AEdd14CeAA302Bdce3d4fC7BA1c442d330cD",
-      "transactionHash": "0xc6422ec84fe40830a25ae4522c90ccb588d868ce61b933d310596a5938b93857"
+      "address": "0xCb75924c6Ec4382A436A6AF724Cb9F2Ab0d2B4b3",
+      "transactionHash": "0x2fe10aeaa9e91a29afe55d5c3d330f93955bae7fc32d53686be8f2a2e1b84488"
     }
   },
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2021-09-19T22:53:41.601Z",
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-02-20T15:34:18.433Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
